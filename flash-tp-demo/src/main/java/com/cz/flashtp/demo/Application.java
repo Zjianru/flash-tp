@@ -1,4 +1,4 @@
-package flashtp.demo;
+package com.cz.flashtp.demo;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.boot.ApplicationRunner;

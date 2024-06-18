@@ -1,4 +1,4 @@
-package flashtp.demo.config;
+package com.cz.flashtp.demo.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

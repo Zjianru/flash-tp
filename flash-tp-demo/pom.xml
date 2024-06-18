@@ -93,7 +93,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.cz.flashtp.demo.Application</mainClass>
+                    <mainClass>com.cz.com.cz.flashtp.demo.Application</mainClass>
                     <layout>JAR</layout>
                 </configuration>
             </plugin>
