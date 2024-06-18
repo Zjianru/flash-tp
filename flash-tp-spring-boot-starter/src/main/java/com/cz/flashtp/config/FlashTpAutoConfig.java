@@ -19,6 +19,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.util.Map;
 import java.util.Set;
@@ -30,12 +31,13 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @author Zjianru
  */
 @Configuration
+@EnableScheduling
 @EnableConfigurationProperties(FlashTpAutoConfigProperties.class)
 @Slf4j
 public class FlashTpAutoConfig {
 
 
-    @Bean("redissonClient")
+    @Bean
     public RedissonClient redissonClient(FlashTpAutoConfigProperties properties) {
         RedissonClient redissonClient = wrapperRedisClient(properties);
         log.info("动态线程池，注册器（redis）链接初始化完成。{} {} {}", properties.getHost(), properties.getPoolSize(), !redissonClient.isShutdown());

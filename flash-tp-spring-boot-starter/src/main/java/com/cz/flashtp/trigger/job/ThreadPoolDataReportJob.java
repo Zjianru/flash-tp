@@ -45,8 +45,7 @@ public class ThreadPoolDataReportJob {
      * 该方法首先从动态线程池服务中获取线程池配置列表，然后将这些配置信息上报到注册中心。
      * 最后，逐个上报每个线程池的详细配置参数。
      */
-//    @Scheduled(cron = "0/20 * * * * ?")
-    @Scheduled(cron = "0/2 * * * * ?")
+    @Scheduled(cron = "0/20 * * * * ?")
     public void execReportThreadPoolList() {
         // 从动态线程池服务中查询线程池列表
         List<ThreadPoolConfig> configs = dynamicThreadPoolService.queryThreadPoolList();
