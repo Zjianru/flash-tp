@@ -1,6 +1,5 @@
 package com.cz.flashtp.domain.entity;
 
-import io.netty.handler.traffic.ChannelTrafficShapingHandler;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

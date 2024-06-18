@@ -27,6 +27,8 @@
     <modules>
         <module>flash-tp-spring-boot-starter</module>
         <module>flash-tp-demo</module>
+        <module>flash-tp-admin</module>
+        <module>flash-tp-common</module>
     </modules>
 
     <dependencyManagement>
