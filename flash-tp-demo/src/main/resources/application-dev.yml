@@ -13,14 +13,13 @@ thread:
         policy: CallerRunsPolicy
 
 # flash-tp 动态线程池管理配置
-#flash-tp:
-#  config:
-#    # 状态；true = 开启、false 关闭
-#    enabled: true
-#    # redis host
-#    host: 127.0.0.1
-#    # redis port
-#    port: 16379
+flash-tp:
+  # 状态；true = 开启、false 关闭
+  enabled: true
+  # redis host
+  host: 127.0.0.1
+  # redis port
+  port: 6379
 
 # 日志
 logging:
