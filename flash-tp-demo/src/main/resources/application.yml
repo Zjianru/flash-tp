@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: flash-tp-demo
+  profiles:
+    active: dev
